@@ -27,3 +27,13 @@ sh $CATALINA_HOME/bin/startup.sh
 ;;
 esac
 exit 0
+
+
+
+
+
+#!/bin/bash
+git pull https://jenisakthi143:ADtsCHdMJBjDhb6syjc7@bitbucket.org/jenisakthi/samplepythonjeni.git
+/etc/init.d/tomcat start
+cd /opt/tomcat/apache-tomcat-9.0.54/webapps
+mv ROOT.war /root/devops/ROOT.war_ date +"%m-%d-%y"
